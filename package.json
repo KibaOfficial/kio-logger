@@ -1,0 +1,46 @@
+{
+  "name": "kio-logger",
+  "version": "0.2.1",
+  "description": "A fancy logging system that I developed over time for my projects and now share it publicly.",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublishOnly": "npm run build",
+    "test": "ts-node src/utils/test.ts",
+    "clean": "rm -rf ./lib/*"
+  },
+  "keywords": [
+    "nodejs",
+    "logger",
+    "logging",
+    "kibaofficial",
+    "typescript",
+    "log"
+  ],
+  "author": "KibaOfficial",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KibaOfficial/ko-logger.git"
+  },
+  "exports": {
+    ".": {
+      "require": "./lib/cjs/index.js",
+      "import": "./lib/esm/index.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
