@@ -1,6 +1,6 @@
 {
   "name": "kio-logger",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A fancy logging system that I developed over time for my projects and now share it publicly.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -27,7 +27,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KibaOfficial/ko-logger.git"
+    "url": "git+https://github.com/KibaOfficial/kio-logger.git"
   },
   "exports": {
     ".": {
